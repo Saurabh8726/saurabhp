@@ -1,4 +1,4 @@
-import { ArrowDown, Mail, Phone, MapPin } from "lucide-react";
+import { ArrowDown, FileText } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jpeg";
 
 const HeroSection = () => {
@@ -28,31 +28,17 @@ const HeroSection = () => {
               Computer Science Engineering fresher with hands-on knowledge of Python, Django, and web development. Ready to contribute to real-world projects.
             </p>
 
-            {/* Quick Contact Info */}
-            <div className="flex flex-wrap justify-center lg:justify-start gap-4 mb-8 animate-fade-in" style={{ animationDelay: "0.4s" }}>
-              <a
-                href="mailto:Saurabh114pal@gmail.com"
-                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
-              >
-                <Mail size={18} />
-                <span className="text-sm">Saurabh114pal@gmail.com</span>
-              </a>
-              <a
-                href="tel:+918726703759"
-                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
-              >
-                <Phone size={18} />
-                <span className="text-sm">+91 8726703759</span>
-              </a>
-            </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-wrap justify-center lg:justify-start gap-4 animate-fade-in" style={{ animationDelay: "0.5s" }}>
+            <div className="flex flex-wrap justify-center lg:justify-start gap-4 animate-fade-in" style={{ animationDelay: "0.4s" }}>
               <a
-                href="#contact"
-                className="px-8 py-3 bg-gradient-primary text-primary-foreground rounded-lg font-semibold hover:opacity-90 transition-opacity shadow-glow"
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-8 py-3 bg-gradient-primary text-primary-foreground rounded-lg font-semibold hover:opacity-90 transition-opacity shadow-glow"
               >
-                Contact Me
+                <FileText size={18} />
+                My Resume
               </a>
               <a
                 href="#projects"
