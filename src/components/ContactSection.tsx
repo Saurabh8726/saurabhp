@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Send, Github, Linkedin } from "lucide-react";
+import { Mail, Phone, MapPin, Send } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -13,8 +13,8 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto">
-          <div className="grid md:grid-cols-5 gap-4">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-6">
             {/* Email Card */}
             <a
               href="mailto:Saurabh114pal@gmail.com"
@@ -24,7 +24,7 @@ const ContactSection = () => {
                 <Mail size={28} className="text-primary" />
               </div>
               <h3 className="font-heading font-semibold mb-2">Email</h3>
-              <p className="text-muted-foreground text-xs break-all">Saurabh114pal@gmail.com</p>
+              <p className="text-muted-foreground text-sm break-all">Saurabh114pal@gmail.com</p>
             </a>
 
             {/* Phone Card */}
@@ -45,36 +45,8 @@ const ContactSection = () => {
                 <MapPin size={28} className="text-primary" />
               </div>
               <h3 className="font-heading font-semibold mb-2">Location</h3>
-              <p className="text-muted-foreground text-sm">Lucknow, UP</p>
+              <p className="text-muted-foreground text-sm">Lucknow, Uttar Pradesh</p>
             </div>
-
-            {/* GitHub Card */}
-            <a
-              href="https://github.com/Saurabh8726"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gradient-card p-6 rounded-2xl border border-border shadow-card hover:border-primary/50 transition-all duration-300 group text-center"
-            >
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
-                <Github size={28} className="text-primary" />
-              </div>
-              <h3 className="font-heading font-semibold mb-2">GitHub</h3>
-              <p className="text-muted-foreground text-sm">@Saurabh8726</p>
-            </a>
-
-            {/* LinkedIn Card */}
-            <a
-              href="https://www.linkedin.com/in/saurabh-pal-304108370"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gradient-card p-6 rounded-2xl border border-border shadow-card hover:border-primary/50 transition-all duration-300 group text-center"
-            >
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
-                <Linkedin size={28} className="text-primary" />
-              </div>
-              <h3 className="font-heading font-semibold mb-2">LinkedIn</h3>
-              <p className="text-muted-foreground text-sm">Connect</p>
-            </a>
           </div>
 
           {/* CTA */}

@@ -1,4 +1,4 @@
-import { ArrowDown, FileText, Github, Linkedin } from "lucide-react";
+import { ArrowDown, FileText } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jpeg";
 
 const HeroSection = () => {
@@ -45,24 +45,6 @@ const HeroSection = () => {
                 className="px-8 py-3 border border-border bg-card hover:bg-secondary transition-colors rounded-lg font-semibold"
               >
                 View Projects
-              </a>
-              <a
-                href="https://github.com/Saurabh8726"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 border border-border bg-card hover:bg-secondary hover:border-primary/50 transition-all rounded-lg"
-                aria-label="GitHub"
-              >
-                <Github size={20} />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/saurabh-pal-304108370"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 border border-border bg-card hover:bg-secondary hover:border-primary/50 transition-all rounded-lg"
-                aria-label="LinkedIn"
-              >
-                <Linkedin size={20} />
               </a>
             </div>
           </div>
