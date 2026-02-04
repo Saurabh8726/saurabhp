@@ -1,4 +1,4 @@
-import { MapPin, GraduationCap, Award, Languages } from "lucide-react";
+import { MapPin, GraduationCap, Award, Languages, Target, Lightbulb, Code2 } from "lucide-react";
 
 const AboutSection = () => {
   return (
@@ -17,13 +17,41 @@ const AboutSection = () => {
         <div className="max-w-4xl mx-auto mb-8">
           <div className="bg-gradient-card p-6 md:p-8 rounded-2xl border border-border shadow-card">
             <h3 className="text-xl font-heading font-semibold mb-4 text-gradient">Professional Summary</h3>
-            <p className="text-muted-foreground leading-relaxed text-lg">
-              Dedicated Computer Science Engineering fresher with hands-on knowledge of Python, Django, HTML, CSS, JavaScript, SQL, and web development fundamentals. Seeking an entry-level IT Developer / Software Developer role to apply programming skills, contribute to real-world projects, and grow in the IT industry.
+            <p className="text-muted-foreground leading-relaxed text-lg mb-4">
+              Dedicated Computer Science Engineering fresher with hands-on knowledge of Python, Django, HTML, CSS, JavaScript, SQL, and web development fundamentals. I'm passionate about building user-friendly applications and solving real-world problems through technology.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              Currently pursuing my Diploma in Computer Science from Government Polytechnic, Unnao, I have developed a strong foundation in both frontend and backend technologies. My training at Techpile Technology, Lucknow has equipped me with practical experience in full-stack development, working on projects like Job Portals, AI Assistants, and Expense Trackers.
             </p>
             <div className="flex items-center gap-2 mt-6 text-muted-foreground">
               <MapPin size={18} className="text-primary" />
-              <span>Lucknow, Uttar Pradesh</span>
+              <span>Lucknow, Uttar Pradesh, India</span>
             </div>
+          </div>
+        </div>
+
+        {/* What I Bring - 3 Column Grid */}
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-8">
+          <div className="bg-gradient-card p-6 rounded-2xl border border-border shadow-card hover:border-primary/50 transition-all duration-300 group text-center">
+            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+              <Target size={24} className="text-primary" />
+            </div>
+            <h4 className="font-heading font-semibold mb-2">Goal-Oriented</h4>
+            <p className="text-muted-foreground text-sm">Focused on delivering quality solutions and continuously improving my skills in the IT industry.</p>
+          </div>
+          <div className="bg-gradient-card p-6 rounded-2xl border border-border shadow-card hover:border-primary/50 transition-all duration-300 group text-center">
+            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+              <Lightbulb size={24} className="text-primary" />
+            </div>
+            <h4 className="font-heading font-semibold mb-2">Quick Learner</h4>
+            <p className="text-muted-foreground text-sm">Eager to learn new technologies and adapt to changing industry trends with enthusiasm.</p>
+          </div>
+          <div className="bg-gradient-card p-6 rounded-2xl border border-border shadow-card hover:border-primary/50 transition-all duration-300 group text-center">
+            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+              <Code2 size={24} className="text-primary" />
+            </div>
+            <h4 className="font-heading font-semibold mb-2">Problem Solver</h4>
+            <p className="text-muted-foreground text-sm">Enjoy tackling complex challenges and finding efficient solutions through clean, maintainable code.</p>
           </div>
         </div>
 
