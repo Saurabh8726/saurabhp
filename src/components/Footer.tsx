@@ -10,17 +10,9 @@ const Footer = () => {
             <span className="text-muted-foreground text-sm">| Saurabh Pal</span>
           </div>
 
-          <div className="flex items-center gap-6">
-            {["Home", "About", "Skills", "Projects", "Contact"].map((link) => (
-              <a
-                key={link}
-                href={`#${link.toLowerCase()}`}
-                className="text-muted-foreground hover:text-foreground transition-colors text-sm"
-              >
-                {link}
-              </a>
-            ))}
-          </div>
+          <p className="text-muted-foreground text-sm">
+            Building the future, one line of code at a time.
+          </p>
 
           <p className="text-muted-foreground text-sm">
             © {currentYear} Saurabh Pal. All rights reserved.
