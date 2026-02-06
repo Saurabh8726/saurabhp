@@ -13,20 +13,18 @@ const AboutSection = () => {
           </p>
         </div>
 
-        {/* Professional Summary - Full Width */}
-        <div className="max-w-4xl mx-auto mb-8">
-          <div className="bg-gradient-card p-6 md:p-8 rounded-2xl border border-border shadow-card">
-            <h3 className="text-xl font-heading font-semibold mb-4 text-gradient">Professional Summary</h3>
-            <p className="text-muted-foreground leading-relaxed text-lg mb-4">
-              Dedicated Computer Science Engineering fresher with hands-on knowledge of Python, Django, HTML, CSS, JavaScript, SQL, and web development fundamentals. I'm passionate about building user-friendly applications and solving real-world problems through technology.
-            </p>
-            <p className="text-muted-foreground leading-relaxed">
-              Currently pursuing my Diploma in Computer Science from Government Polytechnic, Unnao, I have developed a strong foundation in both frontend and backend technologies. My training at Techpile Technology, Lucknow has equipped me with practical experience in full-stack development, working on projects like Job Portals, AI Assistants, and Expense Trackers.
-            </p>
-            <div className="flex items-center gap-2 mt-6 text-muted-foreground">
-              <MapPin size={18} className="text-primary" />
-              <span>Lucknow, Uttar Pradesh, India</span>
-            </div>
+        {/* Professional Summary - Free Flow */}
+        <div className="max-w-4xl mx-auto mb-12 text-center">
+          <h3 className="text-2xl font-heading font-semibold mb-6 text-gradient">Professional Summary</h3>
+          <p className="text-muted-foreground leading-relaxed text-lg mb-4">
+            Dedicated Computer Science Engineering fresher with hands-on knowledge of Python, Django, HTML, CSS, JavaScript, SQL, and web development fundamentals. I'm passionate about building user-friendly applications and solving real-world problems through technology.
+          </p>
+          <p className="text-muted-foreground leading-relaxed mb-6">
+            Currently pursuing my Diploma in Computer Science from Government Polytechnic, Unnao, I have developed a strong foundation in both frontend and backend technologies. My training at Techpile Technology, Lucknow has equipped me with practical experience in full-stack development, working on projects like Job Portals, AI Assistants, and Expense Trackers.
+          </p>
+          <div className="flex items-center justify-center gap-2 text-muted-foreground">
+            <MapPin size={18} className="text-primary" />
+            <span>Lucknow, Uttar Pradesh, India</span>
           </div>
         </div>
 
