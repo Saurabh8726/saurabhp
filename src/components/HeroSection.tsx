@@ -70,11 +70,11 @@ const HeroSection = () => {
           {/* Profile Image */}
           <div className="flex-shrink-0 animate-scale-in" style={{ animationDelay: "0.3s" }}>
             <div className="relative">
-              <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary/30 shadow-glow animate-float">
+              <div className="w-56 h-56 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-primary/30 shadow-glow animate-float">
                 <img
                   src={profilePhoto}
                   alt="Saurabh Pal"
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-full object-cover object-[center_20%] scale-110"
                 />
               </div>
               {/* Decorative Ring */}
