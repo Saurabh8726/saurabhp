@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Send, Github, Linkedin } from "lucide-react";
+import { Mail, MapPin, Send, Github, Linkedin } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -14,7 +14,7 @@ const ContactSection = () => {
         </div>
 
         <div className="max-w-5xl mx-auto">
-          <div className="grid md:grid-cols-5 gap-4">
+          <div className="grid md:grid-cols-4 gap-4">
             {/* Email Card */}
             <a
               href="mailto:Saurabh114pal@gmail.com"
@@ -25,18 +25,6 @@ const ContactSection = () => {
               </div>
               <h3 className="font-heading font-semibold mb-2">Email</h3>
               <p className="text-muted-foreground text-xs break-all">Saurabh114pal@gmail.com</p>
-            </a>
-
-            {/* Phone Card */}
-            <a
-              href="tel:+918726703759"
-              className="bg-gradient-card p-6 rounded-2xl border border-border shadow-card hover:border-primary/50 transition-all duration-300 group text-center"
-            >
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
-                <Phone size={28} className="text-primary" />
-              </div>
-              <h3 className="font-heading font-semibold mb-2">Phone</h3>
-              <p className="text-muted-foreground text-sm">+91 8726703759</p>
             </a>
 
             {/* Location Card */}
