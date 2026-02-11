@@ -5,13 +5,13 @@ const AboutSection = () => {
     <section id="about" className="py-20 md:py-32 bg-card/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Label */}
-        <div className="flex items-center gap-3 mb-4">
+        <div className="flex items-center justify-center gap-3 mb-4">
           <div className="w-12 h-[2px] bg-primary"></div>
           <span className="text-primary font-medium tracking-wider text-sm uppercase">About Me</span>
         </div>
 
         {/* Main Heading */}
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold mb-12">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold mb-12 text-center">
           Who I <span className="text-gradient">Am</span>
         </h2>
 
