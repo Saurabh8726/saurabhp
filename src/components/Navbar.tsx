@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import ThemeToggle from "./ThemeToggle";
 
 const navLinks = [
   { name: "About", href: "#about" },
@@ -47,6 +48,7 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
+            <ThemeToggle />
           </div>
 
           <button
@@ -70,6 +72,9 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
+            <div className="pt-3 border-t border-border">
+              <ThemeToggle />
+            </div>
           </div>
         )}
       </div>
