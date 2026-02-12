@@ -1,37 +1,43 @@
-import { Award, CheckCircle } from "lucide-react";
+import { Award } from "lucide-react";
 
 const certifications = [
-  "Certified AI Foundations Associate",
-  "AI Skills Passport",
-  "Oracle Data Platform 2025 Certified Foundations Associate",
-  "AI Tools Workshop",
-  "O Level (NIELIT)",
+  { name: "Certified AI Foundations Associate", issuer: "Industry" },
+  { name: "AI Skills Passport", issuer: "Professional" },
+  { name: "Oracle Data Platform 2025 Certified", issuer: "Oracle" },
+  { name: "AI Tools Workshop", issuer: "Workshop" },
+  { name: "O Level (NIELIT)", issuer: "NIELIT" },
 ];
 
 const CertificationsSection = () => {
   return (
-    <section id="certifications" className="py-20 md:py-32 bg-card/30">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
-        <div className="flex items-center justify-center gap-3 mb-4">
-          <span className="text-primary font-medium tracking-wider text-sm uppercase">Achievements</span>
+    <section id="certifications" className="py-20 md:py-32 bg-muted/30">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold mb-4">
+            📜 <span className="text-gradient">Certifications</span>
+          </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Continuous learning and professional development
+          </p>
         </div>
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold mb-12 text-center">
-          Certifications
-        </h2>
 
-        <div className="space-y-4">
+        <div className="max-w-4xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {certifications.map((cert, index) => (
             <div
               key={index}
-              className="flex items-center gap-4 p-5 rounded-xl bg-background border border-border hover:border-primary/50 transition-all duration-300"
+              className="bg-card p-5 rounded-xl border border-border shadow-card hover:border-primary/50 hover:shadow-glow transition-all duration-300 group text-center"
             >
-              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                <Award size={20} className="text-primary" />
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
+                <Award size={22} className="text-primary" />
               </div>
-              <span className="text-foreground font-medium flex-1">{cert}</span>
-              <CheckCircle size={22} className="text-primary flex-shrink-0" />
+              <h3 className="font-heading font-semibold text-foreground text-sm mb-1">{cert.name}</h3>
+              <p className="text-primary text-xs font-medium">{cert.issuer}</p>
             </div>
           ))}
+        </div>
+
+        <div className="text-center mt-8">
+          <span className="text-muted-foreground text-sm">5+ certifications from industry leaders</span>
         </div>
       </div>
     </section>

@@ -2,11 +2,12 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
+  { name: "Education", href: "#education" },
   { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
   { name: "Experience", href: "#experience" },
+  { name: "Projects", href: "#projects" },
+  { name: "Certifications", href: "#certifications" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -26,7 +27,7 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-background/80 backdrop-blur-lg border-b border-border"
+          ? "bg-background/90 backdrop-blur-lg border-b border-border shadow-sm"
           : "bg-transparent"
       }`}
     >
@@ -36,20 +37,18 @@ const Navbar = () => {
             Saurabh Pal
           </a>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-muted-foreground hover:text-foreground transition-colors duration-200 text-sm font-medium"
+                className="text-muted-foreground hover:text-primary transition-colors duration-200 text-sm font-medium"
               >
                 {link.name}
               </a>
             ))}
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden p-2 text-foreground"
@@ -59,15 +58,14 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden bg-card/95 backdrop-blur-lg border border-border rounded-lg mt-2 p-4 animate-fade-in">
+          <div className="md:hidden bg-card/95 backdrop-blur-lg border border-border rounded-lg mt-2 p-4 animate-fade-in shadow-card">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="block py-3 text-muted-foreground hover:text-foreground transition-colors duration-200 text-sm font-medium"
+                className="block py-3 text-muted-foreground hover:text-primary transition-colors duration-200 text-sm font-medium"
               >
                 {link.name}
               </a>
