@@ -165,4 +165,35 @@
       opacity: 0.7;
     }
   }
+
+  .animate-theme-spin {
+    animation: theme-spin 0.6s ease-in-out;
+  }
+
+  @keyframes theme-spin {
+    0% {
+      transform: rotate(0deg) scale(1);
+    }
+    50% {
+      transform: rotate(180deg) scale(0.8);
+    }
+    100% {
+      transform: rotate(360deg) scale(1);
+    }
+  }
+
+  .animate-circle-expand {
+    animation: circle-expand 0.6s ease-out forwards;
+  }
+
+  @keyframes circle-expand {
+    0% {
+      transform: scale(0.5);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
 }
