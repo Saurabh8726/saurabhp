@@ -1,7 +1,23 @@
+import { useState, useEffect } from "react";
 import { ArrowDown, FileText, Github, Linkedin, Mail } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jpeg";
 
 const HeroSection = () => {
+  const [orbitActive, setOrbitActive] = useState(false);
+
+  useEffect(() => {
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.attributeName === "class") {
+          setOrbitActive(true);
+          setTimeout(() => setOrbitActive(false), 1200);
+        }
+      });
+    });
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section
       id="home"
@@ -24,7 +40,16 @@ const HeroSection = () => {
                   className="w-full h-full object-cover object-[center_20%] scale-110"
                 />
               </div>
-              <div className="absolute inset-0 w-full h-full rounded-full border-2 border-primary/20 animate-pulse-slow" style={{ transform: "scale(1.1)" }} />
+              <div
+                className={`absolute inset-0 w-full h-full rounded-full border-2 border-primary/40 ${orbitActive ? "animate-orbit" : ""}`}
+                style={{ transform: "scale(1.1)" }}
+              />
+              {orbitActive && (
+                <div
+                  className="absolute w-4 h-4 bg-primary rounded-full shadow-glow animate-orbit"
+                  style={{ top: "-8px", left: "50%", marginLeft: "-8px", transformOrigin: "8px calc(50% + 8px)" }}
+                />
+              )}
             </div>
           </div>
 
