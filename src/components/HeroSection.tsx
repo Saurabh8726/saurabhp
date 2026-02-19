@@ -87,7 +87,7 @@ const HeroSection = () => {
                 Contact Me
               </a>
               <a
-                href="/resume.pdf"
+                href="/Saurabh_Pal_IT_Developer_CV_2.docx"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-6 py-3 border border-border text-foreground rounded-lg font-semibold hover:border-primary/50 transition-colors"
